@@ -21,6 +21,7 @@ univers_names
 
 #verify that matplotlib can find them
 fm.findfont('Univers 67 Condensed')
+
 plt.rcParams['pdf.fonttype']
 
 plt.rcParams['pdf.fonttype'] = 42
@@ -31,7 +32,6 @@ fig, ax = plt.subplots()
 plt.plot(range(10), range(10))
 
 plt.rcParams['mathtext.fontset'] = 'custom'
-plt.rcParams['mathtext.it'] = 'Univers 67 Condensed:italic'
+plt.rcParams['mathtext.it'] = 'Univers 67 Condensed : italic'
 
 ax.set_title('$\it{someitalicstuff}$ not italic', fontname='Univers 67 Condensed' , loc='left')
-plt.savefig('junk.pdf')
