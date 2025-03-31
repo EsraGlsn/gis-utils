@@ -34,4 +34,4 @@ plt.plot(range(10), range(10))
 plt.rcParams['mathtext.fontset'] = 'custom'
 plt.rcParams['mathtext.it'] = 'Univers 67 Condensed : italic'
 
-ax.set_title('$\it{someitalicstuff}$ not italic', fontname='Univers 67 Condensed' , loc='left')
+ax.set_title('$\it{someitalicstuff}$ not italic', fontname='Univers 67 Condensed', loc='left')
